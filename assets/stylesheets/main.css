@@ -3,20 +3,16 @@
   src: url('../fonts/VCR_OSD_MONO_1.001.ttf')
 }
 
-body {
-  margin: 0;
-  background-color: #2a3688;
-  background-image: url('../images/bg-top.jpg');
-  background-size: 300px;
-  background-repeat: no-repeat;
+@font-face {
+  font-family: 'Abel';
+  src: url('https://fonts.googleapis.com/css?family=Abel')
 }
 
-/* This is not working
-body::before {
-  content: '';
-  background-image: url('../images/bg-bottom.jpg');
-  background-size: 300px; 
-} */
+body {
+  margin: 0;
+  background: url('../images/bg-top.jpg') top left/300px no-repeat, url('../images/bg-bottom.jpg') bottom right/120px no-repeat;
+  background-color: #2a3688;
+}
 
 .container {
   padding: 20px;
