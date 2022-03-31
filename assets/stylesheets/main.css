@@ -15,13 +15,24 @@
 }
 
 body {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   height: 100vh;
-  background: url('../images/bg-top.jpg') top left/300px no-repeat, url('../images/bg-bottom.jpg') bottom right/300px no-repeat;
-  background-color: #2a3688;
+  background: url('../images/bg.png') top left/250px no-repeat #2a3688;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 520px;
+  height: 520px;
+  background: url('../images/bg.png') top left/250px no-repeat;
+  transform: rotate(180deg);
 }
 
 .container {
@@ -80,7 +91,11 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    background: url('../images/bg-top.jpg') top left/45% no-repeat, url('../images/bg-bottom.jpg') bottom right/40% no-repeat #2a3688;
+    background: url('../images/bg.png') top left/45% no-repeat #2a3688;
+  }
+
+  body::after {
+    background: url('../images/bg.png') top left/100% no-repeat;
   }
 
   .picture {
@@ -107,7 +122,11 @@ body {
 
 @media screen and (min-width: 1920px) {
   body {
-    background: url('../images/bg-top.jpg') top left/50% no-repeat, url('../images/bg-bottom.jpg') bottom right/50% no-repeat #2a3688;
+    background: url('../images/bg.png') top left/50% no-repeat #2a3688;
+  }
+
+  body::after {
+    background: url('../images/bg.png') top left/50%px no-repeat;
   }
 
   .picture {
