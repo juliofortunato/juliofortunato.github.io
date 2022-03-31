@@ -126,7 +126,7 @@ body::after {
   }
 
   body::after {
-    background: url('../images/bg.png') top left/50%px no-repeat;
+    background: url('../images/bg.png') top left/50% no-repeat;
   }
 
   .picture {
