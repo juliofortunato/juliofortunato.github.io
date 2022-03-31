@@ -83,6 +83,7 @@ body::after {
 
 .social__icon {
   color: #f7f7f7;
+  transition: color .3s ease-in-out;
 }
 
 .social__icon:hover {
